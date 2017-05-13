@@ -8,16 +8,26 @@ namespace MutiLaugage
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-            routes.MapRoute("DefaultLocalized",
-                "{language}-{culture}/{controller}/{action}/{id}",
-                new
-                {
-                    controller = "Home",
-                    action = "Index",
-                    id = "",
-                    language = "nl",
-                    culture = "NL"
-                });
+    //        routes.MapRoute("DefaultLocalized",
+    //"{culture}/{controller}/{action}/{id}",
+    //new
+    //{
+    //    controller = "Home",
+    //    action = "Index",
+    //    id = "",
+    //    culture = "nl-NL"
+    //});
+
+            //routes.MapRoute("DefaultLocalized",
+            //    "{language}-{culture}/{controller}/{action}/{id}",
+            //    new
+            //    {
+            //        controller = "Home",
+            //        action = "Index",
+            //        id = "",
+            //        language = "nl",
+            //        culture = "NL"
+            //    });
 
             routes.MapRoute(
                 name: "Default",

@@ -8,7 +8,7 @@ namespace MutiLaugage
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
-            filters.Add(new InternationalizationAttribute());
+            //filters.Add(new InternationalizationAttribute());
         }
     }
 }

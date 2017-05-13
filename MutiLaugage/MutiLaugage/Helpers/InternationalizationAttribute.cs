@@ -9,17 +9,17 @@ namespace MutiLaugage.Helpers
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
 
-            string language = (string)filterContext.RouteData.Values["language"] ?? "nl";
-            string culture = (string)filterContext.RouteData.Values["culture"] ?? "NL";
+            //string language = (string)filterContext.RouteData.Values["language"] ?? "nl";
+            //string cultureName = (string)filterContext.RouteData.Values["culture"] ?? "en-US";
+            string cultureName = filterContext.RouteData.Values["culture"] as string;
 
 
-            Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo(string.Format("{0}-{1}", language, culture));
-            Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(string.Format("{0}-{1}", language, culture));
+            //Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo(string.Format("{0}-{1}", language, culture));
+            //Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(string.Format("{0}-{1}", language, culture));
 
-            if (language == "ja")
-            {
-                Thread.Sleep(10000);
-            }
+            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(cultureName);
+            Thread.CurrentThread.CurrentUICulture = Thread.CurrentThread.CurrentCulture;
+
         }
     }
 }
