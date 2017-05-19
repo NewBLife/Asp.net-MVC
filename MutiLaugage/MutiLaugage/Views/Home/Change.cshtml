@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Change";
+}
+
+<h2>Change</h2>
+
+<ul>
+    <li>@Html.ActionLink("English","Change",new { language ="en-US"},null)</li>
+    <li>@Html.ActionLink("Japanese", "Change", new { language = "ja-JP" }, null)</li>
+</ul>
+<p>Current date: @DateTime.Now.ToLongDateString() </p>
+<p>Msg: @MsgResource.Msg </p>
+@MsgResource.ResourceManager.GetString("Msg")

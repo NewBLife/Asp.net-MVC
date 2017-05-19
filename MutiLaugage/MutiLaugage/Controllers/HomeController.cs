@@ -1,15 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
+using System.Threading;
 using System.Web;
 using System.Web.Mvc;
 
 namespace MutiLaugage.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public ActionResult Index()
         {
+            return View();
+        }
+
+        public ActionResult Change(string language)
+        {
+            if (language != null)
+            {
+
+                Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(language);
+                Thread.CurrentThread.CurrentUICulture = Thread.CurrentThread.CurrentCulture;
+            }
+
+            HttpCookie cookie = new HttpCookie("_culture");
+            cookie.Value = language;
+
+            Response.Cookies.Add(cookie);
+
             return View();
         }
 
