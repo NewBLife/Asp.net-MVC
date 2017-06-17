@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrimModelBinder.Core", "TrimModelBinder.Core\TrimModelBinder.Core.csproj", "{756D384A-9BB1-47D0-A603-76E15F82153C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrimModelBinder.Framwork", "TrimModelBinder.Framwork\TrimModelBinder.Framwork.csproj", "{2DD202CA-42FD-48FB-8DD0-3F4D19063D6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{756D384A-9BB1-47D0-A603-76E15F82153C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{756D384A-9BB1-47D0-A603-76E15F82153C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{756D384A-9BB1-47D0-A603-76E15F82153C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{756D384A-9BB1-47D0-A603-76E15F82153C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DD202CA-42FD-48FB-8DD0-3F4D19063D6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DD202CA-42FD-48FB-8DD0-3F4D19063D6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DD202CA-42FD-48FB-8DD0-3F4D19063D6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DD202CA-42FD-48FB-8DD0-3F4D19063D6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
